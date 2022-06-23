@@ -1,38 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    background-color: #1e212d;
+    color: #eabf9f;
+    height: 100vh;
+    font-family: "Roboto Mono", monospace;
+  }
+  
+#root {
+    height: 100%;
+  }
+  
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+.pomodoro {
+    font-size: 6em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn-container{
+    transform: translateX(110px);
 }
+
+.btn{
+    padding: 10px 25px;
+    color:#eabf9f;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: ease 0.9s;
+}
+
+.btn:hover{
+    background-color: #eabf9f;
+    color: #1e212d;
+}
+
+
+
+.message {
+    font-size: 0.5em;
+    min-height: 1.3em;
+    margin-bottom: 0.5em;
+  }
